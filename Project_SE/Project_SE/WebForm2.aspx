@@ -5,25 +5,70 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
-    
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"  />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <style>
-        div{
+           body{
+             background-image:url('bg.jpg');
+           background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+        .id{
            padding-top:50px;
        }
     </style>
+  
 </head>
     
 <body>
+    <div> <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand text-light" href="Home.aspx">Final Year Project Manager</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+        <a class="nav-link text-light active" href="Home.aspx">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-light" href="https://localhost:44320/WebForm1.aspx">Category <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-light" href="https://localhost:44320/WebForm2.aspx">Person</a>
+      </li>
+         <li class="nav-item ">
+        <a class="nav-link text-light" href="https://localhost:44320/WebForm3.aspx">Project</a>
+      </li>
+          <li class="nav-item ">
+        <a class="nav-link text-light" href="https://localhost:44320/WebForm4.aspx">Evaluation</a>
+      </li>
+          <li class="nav-item ">
+        <a class="nav-link text-light" href="https://localhost:44320/WebForm4.aspx">Report</a>
+      </li>
+      
+      
+    </ul>
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    
+  </div>
+       
+</nav>
+       </div>
     <form id="form1" runat="server">
-        <div>
+        <div class="id">
             <center>
             <table>
                 <tr>
                 <td>
-                    <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="#003366" Text="Category Name"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="White" Text="Category Name"></asp:Label>
 
                 </td>
                 <td>
@@ -33,7 +78,7 @@
 
                 <tr>
                 <td>
-                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="#003366" Text="Name"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="White" Text="Name"></asp:Label>
 
                 </td>
                 <td>
@@ -43,7 +88,7 @@
 
                 <tr>
                 <td>
-                    <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="#003366" Text="Contact"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="White" Text="Contact"></asp:Label>
 
                 </td>
                 <td>
@@ -53,7 +98,7 @@
 
                 <tr>
                 <td>
-                    <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="#003366" Text="Rank"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="White" Text="Rank"></asp:Label>
 
                 </td>
                 <td>
@@ -63,7 +108,7 @@
 
                 <tr>
                 <td>
-                    <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="#003366" Text="Registration Number"></asp:Label>
+                    <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="White" Text="Registration Number"></asp:Label>
 
                 </td>
                 <td>
@@ -73,7 +118,7 @@
 
                 <tr>
                 <td>
-                    <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="#003366" Text="Degree Program"></asp:Label>
+                    <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="White" Text="Degree Program"></asp:Label>
 
                 </td>
                 <td>
@@ -82,7 +127,7 @@
                 </tr>
                 <tr>
                 <td>
-                    <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="#003366" Text="Category Id"></asp:Label>
+                    <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="White" Text="Category Id"></asp:Label>
 
                 </td>
                 <td>
@@ -91,7 +136,7 @@
                 </tr>
                 <tr>
                 <td>
-                    <asp:Label ID="Label8" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="#003366" Text="Supervisor Id"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="False" Font-Size="Small" Font-Underline="False" ForeColor="White" Text="Supervisor Id"></asp:Label>
 
                 </td>
                 <td>
@@ -101,15 +146,15 @@
                 <tr>
                     
                         <td>
-                            <asp:Button ID="add" runat="server" Text="Add" OnClick="add_Click" BorderStyle="Double" Font-Italic="True" Width="63px" />
+                            <asp:Button class="btn btn-primary"  ID="add" runat="server" Text="Add" OnClick="add_Click" BorderStyle="Double" Font-Italic="True" Width="75px" />
 
                         </td>
                       <td>
-                            <asp:Button ID="delete" runat="server" Text="Delete" OnClick="delete_Click" BorderStyle="Double" Width="63px" />
+                            <asp:Button class="btn btn-danger" ID="delete" runat="server" Text="Delete" OnClick="delete_Click" BorderStyle="Double" Width="75px" />
 
                         </td>
                     <td>
-                            <asp:Button ID="update" runat="server" Text="Update" OnClick="update_Click" BorderStyle="Double" />
+                            <asp:Button class="btn btn-primary" ID="update" runat="server" Text="Update" OnClick="update_Click" BorderStyle="Double" Width="75px" />
 
                         </td>
                         
@@ -119,17 +164,17 @@
 
 
                 </table>
-            <asp:GridView ID="GridView1" runat="server">
+            <asp:GridView ID="GridView1" CssClass="text-light border-light bg-dark" runat="server">
             </asp:GridView>
             <br/>
             <br/>
             <table>
                 <tr>
-                <td class="auto-style1">
-                          <asp:Button ID="Button1" runat="server" Text="Back" OnClick="back_Click" BorderStyle="Double" CssClass="auto-style2" Width="90px" style="margin-left: 0px" />
+                <td >
+                          <asp:Button class="btn-dark" ID="Button1" runat="server" Text="Back" OnClick="back_Click" BorderStyle="Double" CssClass="auto-style2" Width="75px" style="margin-left: 0px" />
                             </td>
-                      <td class="auto-style1">
-                            <asp:Button ID="next" runat="server" Text="Next" OnClick="next_Click" BorderStyle="Double" CssClass="auto-style2" Width="90px" style="margin-left: 148px; margin-bottom: 0px" />
+                      <td >
+                            <asp:Button class="btn-dark" ID="next" runat="server" Text="Next" OnClick="next_Click" BorderStyle="Double" CssClass="auto-style2" Width="75px" style="margin-left: 148px; margin-bottom: 0px" />
                           </td>
                     </tr>
               

@@ -12,7 +12,7 @@ namespace Project_SE
     public partial class WebForm2 : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-390KB38\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True");
-        int id;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (conn.State==ConnectionState.Open)
